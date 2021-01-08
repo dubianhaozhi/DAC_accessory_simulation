@@ -1,4 +1,6 @@
-// 参考サイト: https://qiita.com/youwht/items/8b681a856f59aa82d671
+// 参考サイト:
+// - https://qiita.com/youwht/items/8b681a856f59aa82d671
+// - https://javascript.keicode.com/newjs/download-files.php
 
 $('#simulation__save').click(function() {
   html2canvas($('#simulation__target'), {
