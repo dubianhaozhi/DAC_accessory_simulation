@@ -1,0 +1,21 @@
+.product {
+  width: 80px;
+  &__imgWrapper {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 0 8px;
+  }
+  &__btnText {
+    font-size: 1.2rem;
+  }
+  &__btnIcon {}
+}

@@ -1,0 +1,9 @@
+@mixin container($width: false, $maxWidth: false) {
+  margin: 0 auto;
+  @if $width {
+    width: $width;
+  }
+  @if $maxWidth {
+    max-width: $maxWidth;
+  }
+}
