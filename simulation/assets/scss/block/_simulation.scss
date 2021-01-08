@@ -26,6 +26,7 @@
     border-radius: 12px;
     line-height: $height;
     text-align: center;
+    cursor: pointer;
     &--left {
       @extend #{$this};
       margin-right: 20px;
@@ -60,6 +61,7 @@
   &__btns {
     display: flex;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   &__btn {
     $height: 32px;

@@ -1,0 +1,17 @@
+.moveable-direction.moveable-ne {
+  position: relative !important;
+  cursor: pointer !important;
+  border-radius: 16% !important;
+  border: unset !important;
+  &::after {
+    position: absolute;
+    content: '';
+    background: url('/simulation/assets/img/icon/trash.svg');
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+  }
+}
