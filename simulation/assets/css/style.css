@@ -259,6 +259,11 @@ li {
 
 .simulation__targetImg {
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .simulation__elems {
