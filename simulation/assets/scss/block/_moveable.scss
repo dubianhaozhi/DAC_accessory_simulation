@@ -1,0 +1,11 @@
+.moveable-direction.moveable-ne {
+  position: relative;
+  cursor: pointer !important;
+  &::after {
+    position: absolute;
+    content: 'x';
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}

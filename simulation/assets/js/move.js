@@ -3,6 +3,7 @@
 // TODO: リファクタ(不要なコードとかあるかも)
 const move = function(targetId) {
   const moveable = new Moveable(document.body, {
+    className: `moveable__${targetId}`, // .targetを削除するために使用(ゴリ押し)
     target: document.querySelector(`#${targetId}`),
     draggable: true,
     throttleDrag: 0,
@@ -45,4 +46,5 @@ const move = function(targetId) {
       + ` rotate(${rotate}deg)`
       + ` scale(${scale[0]}, ${scale[1]}) `;
   });
+  return moveable;
 }

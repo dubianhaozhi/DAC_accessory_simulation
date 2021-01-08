@@ -126,6 +126,20 @@ li {
   list-style: none;
 }
 
+.moveable-direction.moveable-ne {
+  position: relative;
+  cursor: pointer !important;
+}
+
+.moveable-direction.moveable-ne::after {
+  position: absolute;
+  content: 'x';
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .product {
   width: 80px;
 }
