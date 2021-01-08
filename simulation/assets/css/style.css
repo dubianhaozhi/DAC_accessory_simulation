@@ -127,17 +127,23 @@ li {
 }
 
 .moveable-direction.moveable-ne {
-  position: relative;
+  position: relative !important;
   cursor: pointer !important;
+  border-radius: 16% !important;
+  border: unset !important;
 }
 
 .moveable-direction.moveable-ne::after {
   position: absolute;
-  content: 'x';
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  content: '';
+  background: url("/simulation/assets/img/icon/trash.svg");
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .product {
@@ -152,6 +158,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .product__img {
@@ -206,6 +213,7 @@ li {
   border-radius: 12px;
   line-height: 40px;
   text-align: center;
+  cursor: pointer;
 }
 
 .simulation__tabBtn--left {
@@ -253,6 +261,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .simulation__btn {
