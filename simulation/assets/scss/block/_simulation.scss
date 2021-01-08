@@ -40,9 +40,14 @@
     justify-content: space-between;
   }
   &__playgroundColumn {
-    margin-left: 20px;
+    &--left {
+      margin-right: 20px;
+    }
+    &--right {}
   }
-  &__target {}
+  &__target {
+    position: relative;
+  }
   &__targetImg {}
   &__elems {
     display: flex;
