@@ -3,8 +3,6 @@
 // TODO: リファクタ(不要なコードとかあるかも)
 const moveable = new Moveable(document.body, {
   target: document.querySelector(".target"),
-  originDraggable: true,
-  originRelative: true,
   draggable: true,
   throttleDrag: 0,
   startDragRotate: 0,
@@ -24,14 +22,10 @@ const moveable = new Moveable(document.body, {
 let frame = {
   translate: [0,0],
   rotate: 0,
-  transformOrigin: "50% 50%",
   scale: [1,1],
 };
 moveable.on("dragOriginStart", ({ dragStart }) => {
   dragStart && dragStart.set(frame.translate);
-}).on("dragOrigin", ({ drag, transformOrigin }) => {
-  frame.translate = drag.beforeTranslate;
-  frame.transformOrigin = transformOrigin;
 }).on("dragStart", ({ set }) => {
   set(frame.translate);
 }).on("drag", ({ beforeTranslate }) => {
@@ -45,8 +39,7 @@ moveable.on("dragOriginStart", ({ dragStart }) => {
 }).on("scale", ({ scale }) => {
   frame.scale = scale
 }).on("render", ({ target }) => {
-  const { translate, rotate, transformOrigin, scale } = frame;
-  target.style.transformOrigin = transformOrigin;
+  const { translate, rotate, scale } = frame;
   target.style.transform = `translate(${translate[0]}px, ${translate[1]}px)`
     + ` rotate(${rotate}deg)`
     + ` scale(${scale[0]}, ${scale[1]}) `;
