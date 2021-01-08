@@ -1,0 +1,12 @@
+@mixin mq($breakpoint: 'sp', $px: false) {
+  $maxWidth: 0;
+  @if $breakpoint {
+    $maxWidth: map-get($breakpoints, $breakpoint);
+  }
+  @if $px {
+    $maxWidth: $px;
+  }
+  @media screen and (max-width: #{$maxWidth}px) {
+    @content;
+  }
+}

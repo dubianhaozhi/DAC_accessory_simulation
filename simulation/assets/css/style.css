@@ -183,6 +183,7 @@ li {
 .simulation__container {
   margin: 0 auto;
   width: 800px;
+  max-width: 95%;
 }
 
 .simulation__header {
@@ -233,12 +234,31 @@ li {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .simulation__playground {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .simulation__playgroundColumn--left {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .simulation__playgroundColumn--left {
+    margin-right: 0;
+  }
+}
+
 .simulation__target {
   position: relative;
+}
+
+.simulation__targetImg {
+  width: 100%;
 }
 
 .simulation__elems {

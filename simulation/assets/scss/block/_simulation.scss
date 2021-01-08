@@ -1,6 +1,6 @@
 .simulation {
   &__container {
-    @include container($width: 800px);
+    @include container($width: 800px, $maxWidth: 95%);
   }
   &__header {
     margin-bottom: 20px;
@@ -39,17 +39,25 @@
   &__playground {
     display: flex;
     justify-content: space-between;
+    @include mq('sp') {
+      flex-direction: column;
+    }
   }
   &__playgroundColumn {
     &--left {
       margin-right: 20px;
+      @include mq('sp') {
+        margin-right: 0;
+      }
     }
     &--right {}
   }
   &__target {
     position: relative;
   }
-  &__targetImg {}
+  &__targetImg {
+    width: 100%;
+  }
   &__elems {
     display: flex;
     flex-wrap: wrap;
