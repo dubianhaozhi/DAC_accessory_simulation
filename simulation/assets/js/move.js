@@ -9,7 +9,7 @@ const move = function(targetId) {
     throttleDrag: 0,
     startDragRotate: 0,
     throttleDragRotate: 0,
-    zoom: 1,
+    zoom: 1.3,
     origin: false,
     padding: {"left":0,"top":0,"right":0,"bottom":0},
     rotatable: true,
