@@ -57,6 +57,8 @@
   }
   &__targetImg {
     width: 100%;
+    user-select: none;
+    pointer-events: none;
   }
   &__elems {
     display: flex;
