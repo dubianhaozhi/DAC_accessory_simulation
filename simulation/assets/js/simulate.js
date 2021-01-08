@@ -17,7 +17,7 @@ $('.product__imgWrapper').click(function() {
     targets.push($this)
     const moveable = move(id)
     moveables.push(moveable)
-    $(`.moveable__${id} .moveable-direction.moveable-ne`).click(function() {
+    $(`.moveable__${id} .moveable-direction.moveable-ne`).on('click touchstart', function() {
       $this.remove()
       moveable.destroy()
     })
