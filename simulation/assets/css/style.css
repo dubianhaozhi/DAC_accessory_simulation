@@ -136,7 +136,7 @@ li {
 .moveable-direction.moveable-ne::after {
   position: absolute;
   content: '';
-  background: url("/simulation/assets/img/icon/trash.svg");
+  background: url("../img/icon/trash.svg");
   background-size: cover;
   top: 50%;
   left: 50%;
