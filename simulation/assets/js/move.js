@@ -1,5 +1,6 @@
 // 参考サイト: https://daybrush.com/moveable/release/latest/doc/
 
+// TODO: リファクタ(不要なコードとかあるかも)
 const moveable = new Moveable(document.body, {
   target: document.querySelector(".target"),
   originDraggable: true,
@@ -28,12 +29,12 @@ let frame = {
 };
 moveable.on("dragOriginStart", ({ dragStart }) => {
   dragStart && dragStart.set(frame.translate);
-}).on("dragOrigin", ({ target, drag, transformOrigin }) => {
+}).on("dragOrigin", ({ drag, transformOrigin }) => {
   frame.translate = drag.beforeTranslate;
   frame.transformOrigin = transformOrigin;
 }).on("dragStart", ({ set }) => {
   set(frame.translate);
-}).on("drag", ({ target, beforeTranslate }) => {
+}).on("drag", ({ beforeTranslate }) => {
   frame.translate = beforeTranslate;
 }).on("rotateStart", ({ set }) => {
   set(frame.rotate);
