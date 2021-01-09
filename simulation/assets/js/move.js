@@ -2,8 +2,9 @@
 
 // TODO: リファクタ(不要なコードとかあるかも)
 const move = function(targetId) {
+  const className = `moveable__${targetId}`;
   const moveable = new Moveable(document.body, {
-    className: `moveable__${targetId}`, // .targetを削除するために使用(ゴリ押し)
+    className: className, // .targetを削除するために使用(ゴリ押し)
     target: document.querySelector(`#${targetId}`),
     draggable: true,
     throttleDrag: 0,
@@ -48,3 +49,15 @@ const move = function(targetId) {
   });
   return moveable;
 }
+
+// focusしてるときだけmoveableを表示する
+// TODO: リファクタする
+$(document).on('click', function(e) {
+  $target = $(e.target)
+  if ($target.hasClass('target') || $target.hasClass('moveable-rotation') || $target.hasClass('moveable-control') || $target.hasClass('moveable-line')) {
+    const id = $target.attr('id')
+    $(`.moveable-control-box.moveable__${id}`).show()
+  } else {
+    $('.moveable-control-box').hide()
+  }
+});
