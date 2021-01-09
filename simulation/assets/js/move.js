@@ -52,7 +52,7 @@ const move = function(targetId) {
 
 // focusしてるときだけmoveableを表示する
 // TODO: リファクタする
-$(document).on('click', function(e) {
+$(document).on('click touchstart', function(e) {
   $target = $(e.target)
   if ($target.hasClass('target') || $target.hasClass('moveable-rotation') || $target.hasClass('moveable-control') || $target.hasClass('moveable-line')) {
     const id = $target.attr('id')
