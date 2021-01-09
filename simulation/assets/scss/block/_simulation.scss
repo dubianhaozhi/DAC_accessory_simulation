@@ -56,9 +56,11 @@
     position: relative;
   }
   &__targetImg {
-    width: 100%;
     user-select: none;
     pointer-events: none;
+    @include mq('sp') {
+      width: 100%;
+    }
   }
   &__elems {
     display: flex;

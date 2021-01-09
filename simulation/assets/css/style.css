@@ -258,12 +258,17 @@ li {
 }
 
 .simulation__targetImg {
-  width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__targetImg {
+    width: 100%;
+  }
 }
 
 .simulation__elems {
