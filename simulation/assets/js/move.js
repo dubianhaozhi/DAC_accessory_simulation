@@ -51,13 +51,12 @@ const move = function(targetId) {
 }
 
 // focusしてるときだけmoveableを表示する
-// TODO: リファクタする
+// TODO: リファクタする(パフォーマンス大丈夫？)
 $(document).on('click touchstart', function(e) {
   $target = $(e.target)
+  $('.moveable-control-box').hide()
   if ($target.hasClass('target') || $target.hasClass('moveable-rotation') || $target.hasClass('moveable-control') || $target.hasClass('moveable-line')) {
     const id = $target.attr('id')
     $(`.moveable-control-box.moveable__${id}`).show()
-  } else {
-    $('.moveable-control-box').hide()
   }
 });
