@@ -58,6 +58,7 @@
   &__targetImg {
     user-select: none;
     pointer-events: none;
+    width: 400px;
     @include mq('sp') {
       width: 100%;
     }
