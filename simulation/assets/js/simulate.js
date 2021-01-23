@@ -24,6 +24,7 @@ $('.product__imgWrapper').click(function() {
   })
 })
 
+// リセットボタン押したら
 $('#simulation__reset').click(function() {
   targets.forEach(function(target) {
     target.remove()
