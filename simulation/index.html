@@ -17,14 +17,14 @@
 
       <div class="simulation__tab">
         <!-- TODO: 回りじゃなくて周りであってる？ -->
-        <div class="simulation__tabBtn--left">指周り</div>
-        <div class="simulation__tabBtn--right">耳周り</div>
+        <div class="simulation__tabBtn--left" id="simulation__tabBtn--ring">指周り</div>
+        <div class="simulation__tabBtn--right" id="simulation__tabBtn--earring">耳周り</div>
       </div>
 
-      <div class="simulation__playground">
+      <div class="simulation__playground" id="simulation__playground--ring">
         <div class="simulation__playgroundColumn--left">
-          <div class="simulation__target" id="simulation__target">
-            <img class="simulation__targetImg" src="./assets/img/hand.png" alt="">
+          <div class="simulation__target" id="simulation__target--ring">
+            <img class="simulation__targetImg" src="./assets/img/hand.jpg" alt="">
             <!-- <img class="target" src="./assets/img/ring_for_simulation/file_name.png"> -->
           </div>
         </div>
@@ -34,140 +34,332 @@
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/1.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL001000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング1</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/2.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL002000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング2</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/3.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL003000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング3</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
-            <div class="simulation__elem">
+            <div class="simulation__elem--lastColumn">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/4.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL004000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング4</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/5.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL005000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング5</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/6.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL006000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング6</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/7.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL007000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング7</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
-            <div class="simulation__elem">
+            <div class="simulation__elem--lastColumn">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/8.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL008000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング8</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/9.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL009000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング9</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/10.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL010000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング10</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
             <div class="simulation__elem">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/11.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL011000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング11</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
-            <div class="simulation__elem">
+            <div class="simulation__elem--lastColumn">
               <div class="product">
                 <div class="product__imgWrapper">
-                  <img class="product__img" src="./assets/img/ring/12.png" alt="">
+                  <img class="product__img" src="./assets/img/ring/IL012000.png" alt="">
                 </div>
                 <a class="product__btn" href="#">
                   <p class="product__btnText">リング12</p>
-                  <img class="product__btnIcon" src="./assets/img/icon/search.png" alt="">
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
                 </a>
               </div>
             </div>
           </div>
 
           <div class="simulation__btns">
-            <div class="simulation__btn" id="simulation__reset">リセット</div>
-            <div class="simulation__btn" id="simulation__save">保存</div>
+            <div class="simulation__btn" id="simulation__reset--ring">
+              <p class="simulation__btnText">リセット</p>
+              <img class="simulation__btnIcon" src="./assets/img/icon/refresh.svg" alt="">
+            </div>
+            <div class="simulation__btn" id="simulation__delete--ring">
+              <p class="simulation__btnText">削除</p>
+              <img class="simulation__btnIcon" src="./assets/img/icon/trash.svg" alt="">
+            </div>
+            <div class="simulation__btn" id="simulation__save--ring">
+              <p class="simulation__btnText">保存</p>
+              <img class="simulation__btnIcon" src="./assets/img/icon/download.svg" alt="">
+            </div>
+          </div>
+
+          <div class="simulation__description">
+            <p class="simulation__descriptionText">
+              お好きなアイテムを選んでシミュレーションできます。<br />
+              イメージは画像形式で保存できます。
+            </p>
+            <img class="simulation__descriptionImg" src="" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation__playground" id="simulation__playground--earring" style="display: none">
+        <div class="simulation__playgroundColumn--left">
+          <div class="simulation__target" id="simulation__target--earring">
+            <img class="simulation__targetImg" src="./assets/img/ear.jpg" alt="">
+            <!-- <img class="target" src="./assets/img/earring_for_simulation/file_name.png"> -->
+          </div>
+        </div>
+
+        <div class="simulation__playgroundColumn--right">
+          <div class="simulation__elems">
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL301550.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス1</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL302000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス2</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL303000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス3</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem--lastColumn">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL304000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス4</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL305000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス5</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL306560.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス6</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL307000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス7</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem--lastColumn">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL308000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">ピアス8</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL501000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ1</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL502000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ2</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL503000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ3</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem--lastColumn">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL504550.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ4</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL505000.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ5</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="simulation__elem">
+              <div class="product">
+                <div class="product__imgWrapper">
+                  <img class="product__img" src="./assets/img/earring/IL506200.jpg" alt="">
+                </div>
+                <a class="product__btn" href="#">
+                  <p class="product__btnText">イヤーカフ6</p>
+                  <img class="product__btnIcon" src="./assets/img/icon/search.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulation__btns">
+            <div class="simulation__btn" id="simulation__reset--ring">リセット</div>
+            <div class="simulation__btn" id="simulation__delete--ring">削除</div>
+            <div class="simulation__btn" id="simulation__save--ring">保存</div>
           </div>
 
           <div class="simulation__description">
@@ -185,6 +377,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <script src="//daybrush.com/moveable/release/latest/dist/moveable.min.js"></script>
+  <script src="./assets/js/tab.js"></script>
   <script src="./assets/js/screen_shot.js"></script>
   <script src="./assets/js/move.js"></script>
   <script src="./assets/js/simulate.js"></script>

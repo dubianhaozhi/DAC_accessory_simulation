@@ -58,6 +58,7 @@
   &__targetImg {
     user-select: none;
     pointer-events: none;
+    width: 400px;
     @include mq('sp') {
       width: 100%;
     }
@@ -65,10 +66,15 @@
   &__elems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   &__elem {
-    margin-bottom: 20px;
+    $this: &;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    &--lastColumn {
+      @extend #{$this};
+      margin-right: 0;
+    }
   }
   &__btns {
     display: flex;
@@ -77,6 +83,9 @@
   }
   &__btn {
     $height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 80px;
     height: $height;
     background-color: #eee;
@@ -85,6 +94,12 @@
     text-align: center;
     margin-right: 16px;
     font-size: 16px;
+  }
+  &__btnText {}
+  &__btnIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
   }
   &__description {}
   &__descriptionText {
