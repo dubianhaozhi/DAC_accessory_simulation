@@ -35,3 +35,19 @@ $('#simulation__reset').click(function() {
     }
   })
 })
+
+// 削除ボタン押したら
+$('#simulation__delete').click(function() {
+  $('.moveable-control-box').each(function(i, elem) {
+    $controlBox = $(elem)
+    if ($controlBox.css('display') === 'block') {
+      const classNames = $controlBox.attr('class').split(' ')
+      const controlBoxClassName = classNames.find(function(name) {
+        return name.includes('moveable__target')
+      })
+      const targetIdName = controlBoxClassName.replace('moveable__', '')
+      $(`#${targetIdName}`).remove()
+      $(`.${controlBoxClassName}`).remove()
+    }
+  })
+})
