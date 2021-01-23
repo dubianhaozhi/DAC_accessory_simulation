@@ -11,6 +11,8 @@
   &__btn {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 20px;
     background-color: #eee;
   }
   &__btnText {
@@ -18,5 +20,6 @@
   }
   &__btnIcon {
     width: 12px;
+    height: 12px;
   }
 }
