@@ -83,6 +83,9 @@
   }
   &__btn {
     $height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 80px;
     height: $height;
     background-color: #eee;
@@ -91,6 +94,12 @@
     text-align: center;
     margin-right: 16px;
     font-size: 16px;
+  }
+  &__btnText {}
+  &__btnIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
   }
   &__description {}
   &__descriptionText {

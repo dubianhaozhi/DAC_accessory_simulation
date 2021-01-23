@@ -320,6 +320,14 @@ li {
 }
 
 .simulation__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80px;
   height: 32px;
   background-color: #eee;
@@ -328,6 +336,12 @@ li {
   text-align: center;
   margin-right: 16px;
   font-size: 16px;
+}
+
+.simulation__btnIcon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 .simulation__descriptionText {
