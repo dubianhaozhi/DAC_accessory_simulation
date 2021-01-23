@@ -66,10 +66,15 @@
   &__elems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   &__elem {
-    margin-bottom: 20px;
+    $this: &;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    &--lastColumn {
+      @extend #{$this};
+      margin-right: 0;
+    }
   }
   &__btns {
     display: flex;

@@ -1,7 +1,6 @@
 .product {
-  width: 80px;
+  width: 84px;
   &__imgWrapper {
-    height: 60px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -11,9 +10,8 @@
   }
   &__btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #eee;
-    padding: 0 8px;
   }
   &__btnText {
     font-size: 1.2rem;
