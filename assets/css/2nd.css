@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (min-width:1051px) {		
+		
+	#concept{width: 100%;background: url("../img/background_concept.jpg") no-repeat;background-position: 50% 50%;background-size: cover;}
+	#concept div{width:	1000px;margin: 0 auto;padding:140px 0 100px 0;}
+	#concept div h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#concept div p{text-align: center;font-size: 20px;line-height: 55px; letter-spacing: 5px;}
+	#concept div p:nth-of-type(1){margin: 0 auto 50px auto;padding:0;}
+	#concept div p:nth-of-type(2){margin: 0 auto 100px auto;padding:0;}
+	
+	#ring_collcection{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ring_collcection h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#ring_collcection #line_up{width: 1000px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ring_collcection #line_up .model{position: relative;display: inline-block;width:230px;height: 230px; margin:0 20px 20px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ring_collcection #line_up .model:nth-child(4n){margin:0 0px 20px 0px;}
+	#ring_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ring_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ring_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ring_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ring_collcection #line_up .model figure img{ width:100%;height: 230px;object-fit: cover; margin: 0 auto 0px auto;}
+	#ring_collcection #line_up .model p{position:absolute;bottom: 20px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 13px;letter-spacing: 1px;z-index: 1}
+	#ring_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);}   
+	
+	#ear_collcection{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ear_collcection h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#ear_collcection #line_up{width: 1000px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ear_collcection #line_up .model{position: relative;display: inline-block;width:230px;height: 230px; margin:0 20px 20px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ear_collcection #line_up .model:nth-child(4n){margin:0 0px 20px 0px;}
+	#ear_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ear_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ear_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ear_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ear_collcection #line_up .model figure img{ width:100%;height: 230px;object-fit: cover; margin: 0 auto 10px auto;}
+	#ear_collcection #line_up .model p{position:absolute;bottom: 20px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 13px;letter-spacing: 1px;z-index: 1}
+	#ear_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);}   
+	
+	#ring_model{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ring_model h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#ring_model #inner{position: relative;width: 1000px;height: 750px; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ring_model #inner #main_photo{position: absolute;top: 0;left: 0; width: 560px;  height:560px;  margin: 0;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ring_model #inner #main_photo img{width: 100%;}	
+	#ring_model #inner #sub_photo{position: absolute;bottom: 0;left: 0; width: 1000px; margin: 0;padding: 0;text-align: center;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ring_model #inner #sub_photo li{display: inline-block;margin: 0 3px;padding: 0;border: 1px solid white;    box-shadow: 0 0 6px #DEDEDE; font-size: 0;}
+	#ring_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ring_model #inner #sub_photo li img{width:130px;height: 130px;object-fit: cover;}    
+	#ring_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ring_model #inner #spec{position: absolute;top: 50px;right: 0; width:400px; margin: 0;padding: 0;}
+	#ring_model #inner #spec #price{width: 250px;margin: 0 auto 20px auto;padding: 0;font-size:32px;letter-spacing: 2px;}
+	#ring_model #inner #spec #price span{ font-size:20px;}
+	#ring_model #inner #spec #detail{width: 250px;margin: 0 auto 50px auto;padding: 0;font-size: 18px;letter-spacing: 2px;line-height:34px;}
+	#ring_model #inner #spec #simulation{position: relative;width: 100%;height: 200px; margin: 0;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ring_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_model #inner #spec #simulation p{position:absolute;top: 30%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:32px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ring_model #inner #spec #simulation p span{display: block; font-size:18px;}
+	#ring_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#ear_model{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ear_model h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#ear_model #inner{position: relative;width: 1000px;height: 750px; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ear_model #inner #main_photo{position: absolute;top: 0;left: 0; width: 560px;  height:560px;  margin: 0;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ear_model #inner #main_photo img{width: 100%;}	
+	#ear_model #inner #sub_photo{position: absolute;bottom: 0;left: 0; width: 1000px; margin: 0;padding: 0;text-align: center;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ear_model #inner #sub_photo li{display: inline-block;margin: 0 3px;padding: 0;border: 1px solid white;    box-shadow: 0 0 6px #DEDEDE; font-size: 0;}
+	#ear_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ear_model #inner #sub_photo li img{width:130px;height: 130px;object-fit: cover;}    
+	#ear_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ear_model #inner #spec{position: absolute;top: 50px;right: 0; width:400px; margin: 0;padding: 0;}
+	#ear_model #inner #spec #price{width: 250px;margin: 0 auto 20px auto;padding: 0;font-size:32px;letter-spacing: 2px;}
+	#ear_model #inner #spec #price span{ font-size:20px;}
+	#ear_model #inner #spec #detail{width: 250px;margin: 0 auto 50px auto;padding: 0;font-size: 18px;letter-spacing: 2px;line-height:34px;}
+	#ear_model #inner #spec #simulation{position: relative;width: 100%;height: 200px; margin: 0;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ear_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_model #inner #spec #simulation p{position:absolute;top: 30%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:32px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ear_model #inner #spec #simulation p span{display: block; font-size:18px;}
+	#ear_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#coordinate{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#coordinate h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#coordinate #list{width: 900px;margin: 0 auto 0px auto;padding: 0 0;font-size: 0;text-align: center;}	
+	#coordinate #list a{display: inline-block;width:195px;margin: 0 5px 10px 5px;padding: 0 0;}	
+	#coordinate #list a img{width:100%;}
+	
+	#shop_list{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size:auto 100% }
+	#shop_list h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#shop_list #list{width: 1000px;margin: 0 auto 0px auto;padding: 0 0;}
+	#shop_list #list #area{text-align: center;margin: 0 auto 50px auto;padding: 0 0;}
+	#shop_list #list #area a{display: inline-block;background: white;width: 136px;;margin: 0 1px;;padding: 20px 0px; font-size: 16px;color:#4e4d4d;text-decoration: none;text-align: center;letter-spacing: 2px;border-radius:12px;}	
+	#shop_list #list #area a:hover{color:#b8292d;}
+	#shop_list #list .shop{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop h3{margin: 0 auto 30px auto;padding: 0 0 10px 0;text-align: center;font-size: 20px;font-weight: normal;letter-spacing: 2px;color:#4e4d4d;border-bottom: 1px solid #4e4d4d;}
+	#shop_list #list .shop section{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop section h4{margin: 0 auto 20px auto;padding: 10px 10px;background: white;font-size:18px;font-weight: normal;letter-spacing: 2px;color:#4e4d4d;}
+	#shop_list #list .shop section p{margin: 0 auto 0px auto;padding: 0 0;font-size: 16px;fletter-spacing: 2px;color:#4e4d4d;line-height:30px}
+	#shop_list #list .shop section a{margin: 0 auto 0px auto;padding: 0 0;font-size: 16px;fletter-spacing: 2px;color:#b8292d;}
+	#shop_list #list .shop section a:hover{color:black}
+	
+	#company{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#company h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#company dl{ display:flex;  flex-wrap: wrap;width: 700px; margin: 0 auto 0px auto;padding:0;font-size:20px;letter-spacing: 3px;line-height: 40px;}
+	#company dl dt{width: 35%; margin: 0 auto 50px auto;padding:0;}
+	#company dl dd{width: 65%; margin: 0 auto 50px auto;padding:0;}
+	
+	#privacy_policy{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#privacy_policy h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#privacy_policy h3{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 20px;font-weight: normal;letter-spacing: 2px;}
+	#privacy_policy div{width: 800px; margin: 0 auto 0px auto;padding:0;}
+	#privacy_policy div p{margin: 0 auto 50px auto;padding:0;font-size: 18px;line-height: 34px; letter-spacing: 1px;}
+		
+	#contact{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#contact h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#contact #form{width:600px;margin: 0 auto;padding: 0;}
+	#contact #form > p{width: 50%; margin: 0 auto 30px auto;padding:10px 0;text-align: center;font-size: 16px;letter-spacing: 1px;color:white;background:#b8292d;border-radius: 40px;}
+	#contact #form form{margin: 0 auto;padding: 0;}
+	#contact #form form .field{margin: 0 auto 30px auto;padding: 0;}
+	#contact #form form .field p{margin: 0 auto 10px auto;padding:0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;}	
+	#contact #form form #enter{margin: 0 auto 30px auto;padding: 0;text-align: center;font-size: 0;}
+	#contact #form form #enter button{-webkit-appearance: none;font-family: inherit; border:0;width:49%;margin:0 0.5%;padding: 18px 0;color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+    #contact #form form #enter button:hover{cursor: pointer;background: #b8292d;}
+	
+	input[type="text"],
+	input[type="email"],
+	textarea {margin: 0 auto 0 0;padding:12px 1% 12px 2%;font-size:16px;letter-spacing:1px;background:white;border:1px solid #4e4d4d; outline: none;}
+    textarea{height:100px;} 
+	.input01,textarea{width:97%;}
+    .input02{width:15%;}
+    input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{ background:#F0F0F0;}
+	
+	#conf{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#conf h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#conf h2 span{display:block;font-size: 24px;letter-spacing: 3px}
+	#conf > p{width:1000px;margin: 0 auto 30px auto;padding:0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;text-align: center;}
+	#conf #inner{width:600px;margin: 0 auto;padding: 0;}
+	#conf #inner .q{margin: 0 auto 5px auto;padding: 0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;}
+    #conf #inner .a{margin: 0 auto 30px auto;padding: 0 0 10px 0;font-size: 16px;letter-spacing: 2px;border-bottom: 1px dashed #4e4d4d;}
+	#conf #inner form #enter{margin: 0 auto 30px auto;padding: 0;text-align: center;font-size: 0;}
+	#conf #inner form #enter .btn{-webkit-appearance: none;font-family: inherit; border:0;width:49%;margin:0 0.5%;padding: 18px 0;color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+    #conf #inner form #enter .btn:hover{cursor: pointer;background: #b8292d;}
+	
+	#thx{width:600px;margin: 0 auto;padding: 80px 0 80px 0;}
+	#thx h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 40px;font-weight: normal;letter-spacing: 15px;}
+	#thx h2 span{display:block;font-size: 24px;letter-spacing: 3px}
+	#thx p{margin: 0 auto 50px auto;padding:0;font-size: 16px;letter-spacing: 2px;line-height: 30px; color:#4e4d4d;}
+	#thx a{display: block;margin: 0 auto 0px auto;padding: 18px 0;text-align: center;text-decoration: none; color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+	#thx a:hover{background: #b8292d;}
+	
+	#ring_simulation{width: 100%;margin: 0 auto;}
+	
+	#ear_simulation{width: 100%;margin: 0 auto;}		
+}
+
+@media screen and (min-width:701px) and ( max-width:1050px)  {
+	#concept{width: 100%;background: url("../img/background_concept.jpg") no-repeat;background-position: 50% 50%;background-size: cover;}
+	#concept div{width:	80%;margin: 0 auto;padding:140px 0 100px 0;}
+	#concept div h2{margin: 0 auto 80px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#concept div p{text-align: center;font-size: 20px;line-height: 55px; letter-spacing: 3px;}
+	#concept div p:nth-of-type(1){margin: 0 auto 50px auto;padding:0;}
+	#concept div p:nth-of-type(2){margin: 0 auto 100px auto;padding:0;}
+	
+	#ring_collcection{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ring_collcection h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#ring_collcection #line_up{width: 620px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ring_collcection #line_up .model{position: relative;display: inline-block;width:190px;height: 190px; margin:0 10px 10px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ring_collcection #line_up .model:nth-child(3n){margin:0 0px 10px 0px;}
+	#ring_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ring_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ring_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ring_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ring_collcection #line_up .model figure img{ width:100%;height:100%;object-fit: cover; margin: 0 auto 0px auto;}
+	#ring_collcection #line_up .model p{position:absolute;bottom: 10px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 13px;letter-spacing: 0px;z-index: 1}
+	#ring_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);} 
+	
+	#ear_collcection{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ear_collcection h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#ear_collcection #line_up{width:620px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ear_collcection #line_up .model{position: relative;display: inline-block;width:190px;height: 190px; margin:0 10px 10px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ear_collcection #line_up .model:nth-child(3n){margin:0 0px 10px 0px;}
+	#ear_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ear_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ear_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ear_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ear_collcection #line_up .model figure img{ width:100%;height:100%;object-fit: cover; margin: 0 auto 0px auto;}
+	#ear_collcection #line_up .model p{position:absolute;bottom: 10px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 13px;letter-spacing: 0px;z-index: 1}
+	#ear_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);}   
+	
+	#ring_model{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ring_model h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size:35px;font-weight: normal;letter-spacing: 10px;}
+	#ring_model #inner{width:90%; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ring_model #inner #main_photo{ width:500px; font-size: 0;  margin: 0 auto 30px auto;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ring_model #inner #main_photo img{width: 100%;}	
+	#ring_model #inner #sub_photo{width:600px; margin: 0 auto 50px auto;padding: 0;text-align: center;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ring_model #inner #sub_photo li{display: inline-block;margin: 0 3px;padding: 0;border: 1px solid white;    box-shadow: 0 0 3px #DEDEDE; font-size: 0;}
+	#ring_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ring_model #inner #sub_photo li img{width:130px;height:130px;object-fit: cover;}    
+	#ring_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ring_model #inner #spec{width:100%; margin: 0 auto;padding: 0;}
+	#ring_model #inner #spec #price{width: 250px;margin: 0 auto 20px auto;padding: 0;font-size:32px;letter-spacing: 2px;}
+	#ring_model #inner #spec #price span{ font-size:20px;}
+	#ring_model #inner #spec #detail{width: 250px;margin: 0 auto 50px auto;padding: 0;font-size: 18px;letter-spacing: 2px;line-height:34px;}
+	#ring_model #inner #spec #simulation{position: relative;width:500px;height: 200px; margin: 0 auto;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ring_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_model #inner #spec #simulation p{position:absolute;top: 30%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:32px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ring_model #inner #spec #simulation p span{display: block; font-size:18px;}
+	#ring_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#ear_model{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#ear_model h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size:35px;font-weight: normal;letter-spacing: 10px;}
+	#ear_model #inner{width: 90%; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ear_model #inner #main_photo{ width:500px;  font-size: 0; margin: 0 auto 30px auto;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ear_model #inner #main_photo img{width: 100%;}	
+	#ear_model #inner #sub_photo{ width:500px; margin: 0 auto 50px auto;padding: 0;text-align: center;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ear_model #inner #sub_photo li{display: inline-block;margin: 0 3px;padding: 0;border: 1px solid white;    box-shadow: 0 0 6px #DEDEDE; font-size: 0;}
+	#ear_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ear_model #inner #sub_photo li img{width:130px;height:130px;object-fit: cover;}    
+	#ear_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ear_model #inner #spec{width:100%; margin: 0 auto;padding: 0;}
+	#ear_model #inner #spec #price{width: 250px;margin: 0 auto 20px auto;padding: 0;font-size:32px;letter-spacing: 2px;}
+	#ear_model #inner #spec #price span{ font-size:20px;}
+	#ear_model #inner #spec #detail{width: 250px;margin: 0 auto 50px auto;padding: 0;font-size: 18px;letter-spacing: 2px;line-height:34px;}
+	#ear_model #inner #spec #simulation{position: relative;width:500px;height: 200px; margin: 0 auto;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ear_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_model #inner #spec #simulation p{position:absolute;top: 30%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:32px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ear_model #inner #spec #simulation p span{display: block; font-size:18px;}
+	#ear_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#coordinate{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#coordinate h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size:35px;font-weight: normal;letter-spacing: 10px;}
+	#coordinate #list{width:690px;margin: 0 auto 0px auto;padding: 0 0;font-size: 0;text-align: center;}	
+	#coordinate #list a{display: inline-block;width:155px;margin: 0 5px 10px 5px;padding: 0 0;}	
+	#coordinate #list a img{width:100%;}
+	
+	#shop_list{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 0%;background-size:100% auto;}
+	#shop_list h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#shop_list #list{width:90%;margin: 0 auto 0px auto;padding: 0 0;}
+	#shop_list #list #area{width:600px;text-align: center;margin: 0 auto 50px auto;padding: 0 0;}
+	#shop_list #list #area a{display: inline-block;background: white;width: 136px;;margin: 0 1px 10px 1px;padding: 20px 0px; font-size: 16px;color:#4e4d4d;text-decoration: none;text-align: center;letter-spacing: 2px;border-radius:12px;}	
+	#shop_list #list #area a:hover{color:#b8292d;}
+	#shop_list #list .shop{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop h3{margin: 0 auto 30px auto;padding: 0 0 10px 0;text-align: center;font-size: 20px;font-weight: normal;letter-spacing: 2px;color:#4e4d4d;border-bottom: 1px solid #4e4d4d;}
+	#shop_list #list .shop section{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop section h4{margin: 0 auto 20px auto;padding: 10px 10px;background: white;font-size:18px;font-weight: normal;letter-spacing: 2px;color:#4e4d4d;}
+	#shop_list #list .shop section p{margin: 0 auto 0px auto;padding: 0 0;font-size: 16px;fletter-spacing: 2px;color:#4e4d4d;line-height:30px}
+	#shop_list #list .shop section a{margin: 0 auto 0px auto;padding: 0 0;font-size: 16px;fletter-spacing: 2px;color:#b8292d;}
+	#shop_list #list .shop section a:hover{color:black}
+	
+	#company{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#company h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#company dl{ display:flex;  flex-wrap: wrap;width: 500px; margin: 0 auto 0px auto;padding:0;font-size:18px;letter-spacing: 3px;line-height: 35px;}
+	#company dl dt{width: 100%; margin: 0 auto 0px auto;padding:0;}
+	#company dl dd{width: 100%; margin: 0 auto 50px auto;padding:0;}
+	
+	#privacy_policy{width: 100%;margin: 0 auto;padding: 80px 0 50px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#privacy_policy h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#privacy_policy h3{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 20px;font-weight: normal;letter-spacing: 2px;}
+	#privacy_policy div{width: 80%; margin: 0 auto 0px auto;padding:0;}
+	#privacy_policy div p{margin: 0 auto 50px auto;padding:0;font-size: 18px;line-height: 34px; letter-spacing: 1px;}
+	
+	#contact{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#contact h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#contact #form{width:80%;margin: 0 auto;padding: 0;}
+	#contact #form > p{width: 50%; margin: 0 auto 30px auto;padding:10px 0;text-align: center;font-size: 16px;letter-spacing: 1px;color:white;background:#b8292d;border-radius: 40px;}
+	#contact #form form{margin: 0 auto;padding: 0;}
+	#contact #form form .field{margin: 0 auto 30px auto;padding: 0;}
+	#contact #form form .field p{margin: 0 auto 10px auto;padding:0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;}	
+	#contact #form form #enter{margin: 0 auto 30px auto;padding: 0;text-align: center;font-size: 0;}
+	#contact #form form #enter button{-webkit-appearance: none;font-family: inherit; border:0;width:49%;margin:0 0.5%;padding: 18px 0;color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+    #contact #form form #enter button:hover{cursor: pointer;background: #b8292d;}
+	
+	input[type="text"],
+	input[type="email"],
+	textarea {margin: 0 auto 0 0;padding:12px 1% 12px 2%;font-size:16px;letter-spacing:1px;background:white;border:1px solid #4e4d4d; outline: none;}
+    textarea{height:100px;} 
+	.input01,textarea{width:97%;}
+    .input02{width:15%;}
+    input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{ background:#F0F0F0;}
+	
+	#conf{width: 100%;margin: 0 auto;padding: 80px 0 80px 0;}
+	#conf h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#conf h2 span{display:block;font-size: 24px;letter-spacing: 3px}
+	#conf > p{width:60%;margin: 0 auto 30px auto;padding:0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;}
+	#conf #inner{width:600px;margin: 0 auto;padding: 0;}
+	#conf #inner .q{margin: 0 auto 5px auto;padding: 0;font-size: 16px;letter-spacing: 2px;color:#4e4d4d;}
+    #conf #inner .a{margin: 0 auto 30px auto;padding: 0 0 10px 0;font-size: 16px;letter-spacing: 2px;border-bottom: 1px dashed #4e4d4d;}
+	#conf #inner form #enter{margin: 0 auto 30px auto;padding: 0;text-align: center;font-size: 0;}
+	#conf #inner form #enter .btn{-webkit-appearance: none;font-family: inherit; border:0;width:49%;margin:0 0.5%;padding: 18px 0;color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+    #conf #inner form #enter .btn:hover{cursor: pointer;background: #b8292d;}
+	
+	#thx{width:600px;margin: 0 auto;padding: 80px 0 80px 0;}
+	#thx h2{margin: 0 auto 50px auto;padding:0;text-align: center;font-size: 35px;font-weight: normal;letter-spacing: 10px;}
+	#thx h2 span{display:block;font-size: 24px;letter-spacing: 3px}
+	#thx p{margin: 0 auto 50px auto;padding:0;font-size: 16px;letter-spacing: 2px;line-height: 30px; color:#4e4d4d;}
+	#thx a{display: block;margin: 0 auto 0px auto;padding: 18px 0;text-align: center;text-decoration: none; color: white;font-size:18px;letter-spacing:3px; background:#4e4d4d;}
+	#thx a:hover{background: #b8292d;}
+	
+	#ring_simulation{width: 100%;margin: 0 auto;}
+	
+	#ear_simulation{width: 100%;margin: 0 auto;}
+	
+}
+@media (max-width: 700px) {
+	#concept{width: 100%;background: url("../img/background_concept.jpg") no-repeat;background-position: 50% 50%;background-size: cover;}
+	#concept div{width:	80%;margin: 0 auto;padding:50px 0 30px 0;}
+	#concept div h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#concept div p{text-align: center;font-size: 16px;line-height: 30px; letter-spacing: 1px;}
+	#concept div p:nth-of-type(1){margin: 0 auto 50px auto;padding:0;}
+	#concept div p:nth-of-type(2){margin: 0 auto 100px auto;padding:0;}
+	
+	#ring_collcection{width: 100%;margin: 0 auto;padding: 30px 0 30px 0;}
+	#ring_collcection h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#ring_collcection #line_up{width:320px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ring_collcection #line_up .model{position: relative;display: inline-block;width:150px;height: 150px; margin:0 10px 10px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ring_collcection #line_up .model:nth-child(2n){margin:0 0px 10px 0px;}
+	#ring_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ring_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ring_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ring_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ring_collcection #line_up .model figure img{ width:100%;height:100%;object-fit: cover; margin: 0 auto 0px auto;}
+	#ring_collcection #line_up .model p{position:absolute;bottom:10px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 12px;letter-spacing: 0px;z-index: 1}
+	#ring_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);} 
+	
+	#ear_collcection{width: 100%;margin: 0 auto;padding:30px 0;}
+	#ear_collcection h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#ear_collcection #line_up{width:320px;margin: 0 auto 0 auto;padding: 0 0;}
+	#ear_collcection #line_up .model{position: relative;display: inline-block;width:150px;height: 150px; margin:0 10px 10px 0px;padding:0; border: 0 solid #fff; font-size: 0; box-sizing: border-box;box-shadow: 0 0 6px #DEDEDE; }
+	#ear_collcection #line_up .model:nth-child(2n){margin:0 0px 10px 0px;}
+	#ear_collcection #line_up .model::before {  content: attr(data);  display: block;  position: relative;  z-index: 1;}
+	#ear_collcection #line_up .model::after {  content: "";  display: block;  position: absolute;  bottom: 0;  left: 0;  height: 100%;  width: 100%;  transition: border-width 300ms;  border: 0 solid #DEDEDE;  box-sizing: border-box;  z-index: 0;	}
+	#ear_collcection #line_up .model:hover::after {  border-width: 10px;}
+	#ear_collcection #line_up .model a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_collcection #line_up .model figure{position:absolute;top: 0;left: 0;  width:100%; margin:0 ;padding: 0;overflow: hidden;}
+	#ear_collcection #line_up .model figure img{ width:100%;height:100%;object-fit: cover; margin: 0 auto 0px auto;}
+	#ear_collcection #line_up .model p{position:absolute;bottom: 10px;left: 0; text-align: center;display: block; width:100%;margin:0 auto;padding: 0;font-size: 12px;letter-spacing: 0px;z-index: 1}
+	#ear_collcection #line_up .model a:hover{cursor: pointer;background:rgba(255,255,255,0.5);}   
+		
+	#ring_model{width: 100%;margin: 0 auto;padding:30px 0;}
+	#ring_model h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size:24px;font-weight: normal;letter-spacing: 2px;}
+	#ring_model #inner{width:80%; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ring_model #inner #main_photo{ width:100%; font-size: 0;  margin: 0 auto 30px auto;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ring_model #inner #main_photo img{width: 100%;}	
+	#ring_model #inner #sub_photo{width:100%; margin: 0 auto 30px auto;padding: 0;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ring_model #inner #sub_photo li{display: inline-block;margin: 0 1px;padding: 0;border: 1px solid white;    box-shadow: 0 0 3px #DEDEDE; font-size: 0;}
+	#ring_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ring_model #inner #sub_photo li img{width:90px;height:90px;object-fit: cover;}    
+	#ring_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ring_model #inner #spec{width:100%; margin: 0 auto;padding: 0;}
+	#ring_model #inner #spec #price{margin: 0 auto 10px auto;padding: 0;font-size:22px;letter-spacing: 1px;}
+	#ring_model #inner #spec #price span{ font-size:16px;}
+	#ring_model #inner #spec #detail{margin: 0 auto 30px auto;padding: 0;font-size: 14px;letter-spacing:0px;line-height:18px;}
+	#ring_model #inner #spec #simulation{position: relative;width:100%;height: 200px; margin: 0 auto;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ring_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ring_model #inner #spec #simulation p{position:absolute;top: 40%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:20px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ring_model #inner #spec #simulation p span{display: block; font-size:16px;}
+	#ring_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#ear_model{width: 100%;margin: 0 auto;padding:30px 0;}
+	#ear_model h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size:24px;font-weight: normal;letter-spacing: 2px;}
+	#ear_model #inner{width: 80%; margin: 0 auto 0px auto;padding: 0 0;}	
+	#ear_model #inner #main_photo{ width:100%;  font-size: 0; margin: 0 auto 30px auto;padding: 0; box-shadow: 0 0 6px #DEDEDE;       }
+	#ear_model #inner #main_photo img{width: 100%;}	
+	#ear_model #inner #sub_photo{ width:100%; margin: 0 auto 30px auto;padding: 0;/* display: flex;  justify-content: space-between; */ list-style: none}
+	#ear_model #inner #sub_photo li{display: inline-block;margin: 0 1px;padding: 0;border: 1px solid white;    box-shadow: 0 0 6px #DEDEDE; font-size: 0;}
+	#ear_model #inner #sub_photo li.current{  border: 1px solid #14dfff;        }
+	#ear_model #inner #sub_photo li img{width:90px;height:90px;object-fit: cover;}    
+	#ear_model #inner #sub_photo li:hover{cursor:pointer;}	
+	#ear_model #inner #spec{width:100%; margin: 0 auto;padding: 0;}
+	#ear_model #inner #spec #price{margin: 0 auto 10px auto;padding: 0;font-size:22px;letter-spacing: 1px;}
+	#ear_model #inner #spec #price span{ font-size:16px;}
+	#ear_model #inner #spec #detail{margin: 0 auto 30px auto;padding: 0;font-size: 14px;letter-spacing: 0px;line-height:18px;}
+	#ear_model #inner #spec #simulation{position: relative;width:100%;height: 200px; margin: 0 auto;padding: 0;background: url("../img/background_simulation.jpg") no-repeat;background-position: 50% 50%;background-size: 100% auto;}
+	#ear_model #inner #spec #simulation a{position:absolute;top: 0;left: 0; display: block; width:100%;height: 100%; margin:0 ;padding: 0;z-index: 3}
+	#ear_model #inner #spec #simulation p{position:absolute;top: 40%;left: 0;width:100%;margin:0 ;padding: 0;text-align: center;font-size:20px;letter-spacing: 1px;color: white;text-shadow:0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000,0px 0px 10px #000;}
+	#ear_model #inner #spec #simulation p span{display: block; font-size:16px;}
+	#ear_model #inner #spec #simulation a:hover{background:rgba(000,000,000,0.2);}
+	
+	#coordinate{width: 100%;margin: 0 auto;padding: 30px 0;}
+	#coordinate h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size:24px;font-weight: normal;letter-spacing: 2px;}
+	#coordinate #list{width:80%;margin: 0 auto 0px auto;padding: 0 0;font-size: 0;}	
+	#coordinate #list a{display: inline-block;width:50%;margin: 0 0px 0px 0px;padding: 0 0;}	
+	#coordinate #list a img{width:100%;}
+	
+	#shop_list{width: 100%;margin: 0 auto;padding:30px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 0%;background-size:100% auto;}
+	#shop_list h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#shop_list #list{width:80%;margin: 0 auto 0px auto;padding: 0 0;}
+	#shop_list #list #area{width:100%;text-align: center;margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list #area a{display:block;background: white;width:100%;;margin: 0 auto 6px auto;padding: 20px 0px; font-size: 15px;color:#4e4d4d;text-decoration: none;text-align: center;letter-spacing:0px;border-radius:12px;}	
+	#shop_list #list #area a:hover{color:#b8292d;}
+	#shop_list #list .shop{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop h3{margin: 0 auto 20px auto;padding: 0 0 10px 0;text-align: center;font-size:18px;font-weight: normal;letter-spacing:0px;color:#4e4d4d;border-bottom: 1px solid #4e4d4d;}
+	#shop_list #list .shop section{margin: 0 auto 30px auto;padding: 0 0;}
+	#shop_list #list .shop section h4{margin: 0 auto 10px auto;padding: 6px;background: white;font-size:16px;font-weight: normal;letter-spacing:0px;color:#4e4d4d;}
+	#shop_list #list .shop section p{margin: 0 auto 0px auto;padding: 0 0;font-size: 14px;fletter-spacing: 0px;color:#4e4d4d;line-height:18px}
+	#shop_list #list .shop section a{margin: 0 auto 0px auto;padding: 0 0;font-size: 16px;fletter-spacing: 2px;color:#b8292d;}
+	#shop_list #list .shop section a:hover{color:black}
+	
+	#company{width: 100%;margin: 0 auto;padding:30px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#company h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#company dl{ display:flex;  flex-wrap: wrap;width: 80%; margin: 0 auto 0px auto;padding:0;font-size:15px;letter-spacing: 1px;line-height: 24px;}
+	#company dl dt{width: 100%; margin: 0 auto 0px auto;padding:0;}
+	#company dl dd{width: 100%; margin: 0 auto 30px auto;padding:0;}
+	
+	#privacy_policy{width: 100%;margin: 0 auto;padding:30px 0;background: url("../img/background_part.jpg") repeat;background-position: 50% 50%; background-size: auto 100%}
+	#privacy_policy h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing:2px;}
+	#privacy_policy h3{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 15px;font-weight: normal;letter-spacing: 0px;}
+	#privacy_policy div{width: 80%; margin: 0 auto 0px auto;padding:0;}
+	#privacy_policy div p{margin: 0 auto 30px auto;padding:0;font-size: 13px;line-height:24px; letter-spacing: 0px;}
+	
+	#contact{width: 100%;margin: 0 auto;padding:30px 0;}
+	#contact h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#contact #form{width:80%;margin: 0 auto;padding: 0;}
+	#contact #form > p{width: 100%; margin: 0 auto 20px auto;padding:6px 0;text-align: center;font-size: 14px;letter-spacing: 0px;color:white;background:#b8292d;border-radius: 40px;}
+	#contact #form form{margin: 0 auto;padding: 0;}
+	#contact #form form .field{margin: 0 auto 20px auto;padding: 0;}
+	#contact #form form .field p{margin: 0 auto 0px auto;padding:0;font-size: 15px;letter-spacing: 0px;color:#4e4d4d;}	
+	#contact #form form #enter{margin: 0 auto 0px auto;padding: 0;text-align: center;font-size: 0;}
+	#contact #form form #enter button{-webkit-appearance: none;font-family: inherit; border:0;width:100%;margin:0 0 10px 0;padding: 18px 0;color: white;font-size:16px;letter-spacing:0px; background:#4e4d4d;}
+    #contact #form form #enter button:hover{cursor: pointer;background: #b8292d;}
+	
+	input[type="text"],
+	input[type="email"],
+	textarea {margin: 0 auto 0 0;padding:12px 1% 12px 2%;font-size:16px;letter-spacing:1px;background:white;border:1px solid #4e4d4d; outline: none;}
+    textarea{height:100px;} 
+	.input01,textarea{width:97%;}
+    .input02{width:15%;}
+    input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{ background:#F0F0F0;}
+	
+	#conf{width: 100%;margin: 0 auto;padding:30px 0;}
+	#conf h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#conf h2 span{display:block;font-size:18px;letter-spacing: 1px}
+	#conf > p{width:80%;margin: 0 auto 10px auto;padding:0;font-size: 13px;letter-spacing: 0px;line-height: 18px; color:#4e4d4d;}
+	#conf #inner{width:80%;margin: 0 auto;padding: 0;}
+	#conf #inner .q{margin: 0 auto 0px auto;padding: 0;font-size: 14px;letter-spacing: 0px;color:#4e4d4d;}
+    #conf #inner .a{margin: 0 auto 20px auto;padding: 0 0 5px 0;font-size: 14px;letter-spacing: 0px;border-bottom: 1px dashed #4e4d4d;}
+	#conf #inner form #enter{margin: 0 auto 0px auto;padding: 0;text-align: center;font-size: 0;}
+	#conf #inner form #enter .btn{-webkit-appearance: none;font-family: inherit; border:0;width:49%;margin:0 0.5%;padding: 18px 0;color: white;font-size:16px;letter-spacing:0px; background:#4e4d4d;}
+    #conf #inner form #enter .btn:hover{cursor: pointer;background: #b8292d;}
+	
+	#thx{width:100%;margin: 0 auto;padding:30px 0;}
+	#thx h2{margin: 0 auto 30px auto;padding:0;text-align: center;font-size: 24px;font-weight: normal;letter-spacing: 2px;}
+	#thx h2 span{display:block;font-size:18px;letter-spacing: 1px}
+	#thx p{width:80%;margin: 0 auto 30px auto;padding:0;font-size: 14px;letter-spacing:0px;line-height: 22px; color:#4e4d4d;}
+	#thx a{display: block;width:80%;margin: 0 auto 0px auto;padding: 18px 0;text-align: center;text-decoration: none; color: white;font-size:16px;letter-spacing:0px; background:#4e4d4d;}
+	#thx a:hover{background: #b8292d;}
+	
+	#ring_simulation{width: 100%;margin: 0 auto;}
+	
+	#ear_simulation{width: 100%;margin: 0 auto;}
+} 

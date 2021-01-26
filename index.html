@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ILII公式サイト</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="アクセサリーブランドILIIの公式サイトです。コレクションやお取り扱い店舗などの情報をご案内してます。">
+	
+	<meta property="og:title" content="ILII公式サイト"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.a-odo.co.jp/ilii/"/>
+    <meta property="og:image" content="http://www.a-odo.co.jp/ilii/assets/img/ogp.jpg"/>
+    <meta property="og:site_name" content="ILII公式サイト"/>
+    <meta property="og:description" content="アクセサリーブランドILIIの公式サイトです。コレクションやお取り扱い店舗などの情報をご案内してます。"/>
+	
+	<link rel="shortcut icon" href="assets/img/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/index.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/animation.css" type="text/css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+</head>
+
+<body>
+	<div id="wrapper">					
+		<div class="image_slider">
+			<div id="scene01"></div>
+			<div id="scene02"></div>
+		</div>		
+		<div id="header"></div>					
+        <main>  			
+			<div id="contents_wrapper">
+				<div id="contents">
+					<h2><img src="assets/img/logo_effect.png" alt="ILII Follow your heart"></h2>
+					<p>今、自分が気になるものを思うままにつける</p>	
+				</div>
+			</div>						
+        </main>				
+		<div id="footer"></div>		
+	</div>
+	
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!--共通ファイル用javascript-->
+	<script> 
+		$(function() { 
+			$("#header").load("assets/tpl/header.html");
+			$("#footer").load("assets/tpl/footer.html"); });
+	</script>
+	
+	<!--slickスライダー-->
+	<script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$('.image_slider').slick({
+			dots:false,
+			autoplay: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			arrows: false,
+			pauseOnHover: false
+		});
+	</script>		
+	
+</body>
+</html>
