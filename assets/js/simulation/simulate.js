@@ -40,6 +40,10 @@ $('[id^=simulation__delete]').on('click touchstart', function() {
         return name.includes('moveable__target')
       })
       const targetIdName = controlBoxClassName.replace('moveable__', '')
+      console.log({
+        targetIdName,
+        'aaa': 'aaa'
+      })
       $(`#${targetIdName}`).remove()
       $(`.${controlBoxClassName}`).remove()
     }
