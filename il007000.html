@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ステンレスリング IL007000｜ILII公式サイト</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="ステンレスリング IL007000の商品詳細です。">
+	
+	<meta property="og:title" content="ステンレスリング IL007000｜ILII公式サイト"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.a-odo.co.jp/ilii/"/>
+    <meta property="og:image" content="http://www.a-odo.co.jp/ilii/assets/img/ogp.jpg"/>
+    <meta property="og:site_name" content="ステンレスリング IL007000｜ILII公式サイト"/>
+    <meta property="og:description" content="ステンレスリング IL007000の商品詳細です。"/>
+	
+	<link rel="shortcut icon" href="assets/img/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd_common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/animation.css" type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/bwv2dze.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+</head>
+
+<body>				
+	<div id="header"></div>	
+	
+	<main id="ring_model">  
+		<h2 class="tranjan">RING COLLECTION</h2>
+		<div id="inner">			
+			<div id="main_photo"><img src="assets/img/il007000_01.jpg" alt="ステンレスリング IL007000" name="main"></div>			
+			<ul id="sub_photo">
+				<li class="current"><img src="assets/img/il007000_01.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_01.jpg'"></li>
+				<li><img src="assets/img/il007000_02.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_02.jpg'"></li>
+				<li><img src="assets/img/il007000_03.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_03.jpg'"></li>
+				<li><img src="assets/img/il007000_04.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_04.jpg'"></li>
+				<li><img src="assets/img/il007000_05.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_05.jpg'"></li>
+				<li><img src="assets/img/il007000_06.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_06.jpg'"></li>
+				<li><img src="assets/img/il007000_07.jpg" alt="ステンレスリング IL007000" onMouseOver="document.main.src='assets/img/il007000_07.jpg'"></li>
+			</ul>			
+			<div id="spec">
+				<p id="price">7,700円<span>（税込）</span></p>
+				<p id="detail">Item No,：IL007000<br>Material：Stainless Steel<br>Size：＃9,11,13,15</p>
+				<div id="simulation">
+					<a href="ring_simulation.html"></a>
+					<p>Simulation<span>シミュレーションページはこちら</span></p>
+				</div>				
+			</div>					
+		</div>		
+	</main>		
+		
+	<div id="footer"></div>	
+	
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!--共通ファイル用javascript-->
+	<script> 
+		$(function() { 
+			$("#header").load("assets/tpl/header.html");
+			$("#footer").load("assets/tpl/footer.html"); });
+	</script>
+		
+	<!--商品photo-->
+	<script>
+		$(function(){
+			$('#sub_photo img').on('click',function(){
+				//mainに切り替えるimgのsrc取得
+				img = $(this).attr('src');
+				//currentクラス付け替え
+				$('#sub_photo li').removeClass('current');
+				$(this).parent().addClass('current');
+				//fadeOutできたらsrc変更してfadeIn
+				$('#main_photo img').fadeOut(50, function() {
+					$('#main_photo img').attr('src', img).on('load', function() {
+						$(this).fadeIn();
+					})
+				})
+			});
+		});
+	</script>
+	
+</body>
+</html>

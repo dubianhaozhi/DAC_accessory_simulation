@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHOP LIST｜ILII公式サイト</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="全国のILII取り扱い店舗をご案内しています。ぜひお近くの店舗へお立ち寄りください。">
+	
+	<meta property="og:title" content="Shop List｜ILII公式サイト"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.a-odo.co.jp/ilii/"/>
+    <meta property="og:image" content="http://www.a-odo.co.jp/ilii/assets/img/ogp.jpg"/>
+    <meta property="og:site_name" content="Shop List｜ILII公式サイト"/>
+    <meta property="og:description" content="全国のILII取り扱い店舗をご案内しています。ぜひお近くの店舗へお立ち寄りください。"/>
+	
+	<link rel="shortcut icon" href="assets/img/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd_common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/animation.css" type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/bwv2dze.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+</head>
+
+<body>				
+	<div id="header"></div>	
+	
+	<main id="shop_list">  			
+		<h2 class="tranjan">SHOP LIST</h2>
+		<div id="list">
+			<div id="area">
+				<a href="?id=hokkaido_tohoku">北海道・東北</a>
+				<a href="?id=shinetsu_hokuriku">信越・北陸</a>
+				<a href="?id=">関東</a>
+				<a href="?id=">東海</a>
+				<a href="?id=">関西</a>
+				<a href="?id=">四国・中国</a>
+				<a href="?id=">九州・沖縄</a>
+			</div>
+			<div id="hokkaido_tohoku" class="shop">
+				<h3>北海道・東北エリア</h3>
+				<section>
+					<h4>アクセサリーpepe　パセオ店</h4>
+					<p>北海道札幌市北区北6条西3丁目　JR札幌駅パセオ1F<br>TEL：011-213-5417</p>
+					<a href="https://www.accessory-pepe.co.jp" target="_blank">www.accessory-pepe.co.jp</a>
+				</section>
+				<section>
+					<h4>GINZA LoveLove　郡山店</h4>
+					<p>福島県郡山市松木町2-88　イオンタウン郡山<br>TEL：024-956-9011</p>
+					<a href="http://www.sekido.com" target="_blank">www.sekido.com</a>
+				</section>
+			</div>
+			<div id="shinetsu_hokuriku" class="shop">
+				<h3>信越・北陸エリア</h3>
+				<section>
+					<h4>KIRAT　イオンモール松本店</h4>
+					<p>長野県松本市中央4-9-51　イオンモール松本晴庭1F<br>TEL：0263-31-5661</p>
+					<a href="https://www.jkirat.co.jp" target="_blank">www.jkirat.co.jp</a>
+				</section>				
+			</div>
+		</div>
+	</main>		
+		
+	<div id="footer"></div>	
+	
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!--共通ファイル用javascript-->
+	<script> 
+		$(function() { 
+			$("#header").load("assets/tpl/header.html");
+			$("#footer").load("assets/tpl/footer.html"); });
+	</script>
+	
+	<!-- アンカーリンク --> 
+    <script>
+        $(window).on('load', function() {
+            var headerHeight = 100;
+            var url = $(location).attr('href');
+            if(url.indexOf("?id=") != -1){
+                var id = url.split("?id=");
+                var $target = $('#' + id[id.length - 1]);
+                if($target.length){
+                    var pos = $target.offset().top-headerHeight;
+                    $("html, body").animate({scrollTop:pos}, 500);
+                }
+            }
+        });
+    </script> 
+	
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Contact us 送信完了｜ILII -Follow your heart- 公式ウェブサイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	
+	<meta property="og:title" content="Contact us 送信完了｜ILII -Follow your heart- 公式ウェブサイト"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://"/>
+    <meta property="og:image" content="/assets/img/ogp.jpg"/>
+    <meta property="og:site_name" content="Contact us 送信完了｜ILII -Follow your heart- 公式ウェブサイト"/>
+    <meta property="og:description" content=""/>
+	
+	<link rel="shortcut icon" href="../img/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+	<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/2nd_common.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/2nd.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/animation.css" type="text/css"/>
+       
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+</head>
+
+<body>
+    <header>			
+		<div>
+			<section>
+				<h1><a href="../../index.html"><img src="../img/logo.png" alt=""></a></h1>
+				<div class="button">
+					<div><span></span><span></span><span></span></div>
+				</div>
+				<nav>
+					<div id="menu">
+						<ul class="clearfix">
+							<li><a href="../../index.html" class="nomal">Home</a></li>
+							<li><a href="../../concept.html" class="nomal">Concept</a></li>
+							<li><a href="../../ring_collcection.html" class="nomal">Ring Collcection</a></li>
+							<li><a href="../../ear_collcection.html" class="nomal">Ear Collcection</a></li>
+							<li><a href="../../coordinate.html" class="nomal">Coordinate</a></li>
+							<li><a href="../../ring_simulation.html" class="nomal">Ring Simulation</a></li>
+							<li><a href="../../ear_simulation.html" class="nomal">Ear Simulation</a></li>
+							<li><a href="../../shop_list.html" class="nomal">Shop List</a></li>
+							<li><a href="../../company.html" class="nomal">Company</a></li>
+							<li><a href="#" class="instagram" target="_blank">Instagram</a></li>
+						</ul>							
+					</div>
+				</nav>
+			</section>
+		</div>
+	</header>	
+    <main id="thx">
+		<h2>Contact us<span>送信完了</span></h2>		                   
+		<p>お問い合わせいただき誠にありがとうございました。<br>入力いただいたメールアドレス宛に確認メールをお送りしています。<br>もし確認メールが届いていない場合は、入力したアドレスが間違っている可能性がございます。その際はお手数ですが再度アドレスをご確認の上、お問い合わせメールを送信していただければと存じます。</p>
+		<a href="../../contact.html">Contact usへ戻る</a>
+    </main>
+    <footer>
+		<div id="inner" class="clearfix">
+			<ul>
+				<li><a href="../../contact.html">Contact us</a></li>
+				<li><a href="../../privacy_policy.html">Privacy policy</a></li>
+			</ul>
+			<small>ALL CONTENTS COPYRIGHTHY &copy; ATELIER ODO.LTD.ALL RIGHTS RESERVED</small>
+		</div>	
+	</footer>
+    
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!--共通ファイル用javascript
+	<script> 
+		$(function() { 
+			$("#header").load("assets/tpl/header.html");
+			$("#footer").load("assets/tpl/footer.html"); });
+	</script>-->
+	
+    <!--スマホメニュー--> 
+    <script>
+        $(function() {
+            var $header = $('header');
+            $('.button').click(function(){
+                $header.toggleClass("open");
+            });
+        });
+    </script>
+    
+	<!--スマホメニュー　body固定--> 
+    <script>
+        $(function(){
+            var scrollPos;
+            $('.button').on('click', function() {
+                if($('body').hasClass('fixed')){
+                    $('body').removeClass('fixed').css('top',0 + 'px');
+                    window.scrollTo( 0 , scrollPos );
+                }else{
+                    scrollPos = $(window).scrollTop();
+                    $('body').addClass('fixed').css('top',-scrollPos + 'px');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

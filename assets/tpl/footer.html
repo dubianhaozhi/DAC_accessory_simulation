@@ -1,0 +1,92 @@
+<footer>
+	<div id="inner" class="clearfix">
+		<div id="main">
+			<a href="index.html" class="nomal">HOME</a>
+			<a href="concept.html" class="nomal">CONCEPT</a>
+			<a href="ring_collcection.html" class="nomal">RING COLLECTION</a>
+			<a href="ear_collcection.html" class="nomal">EAR COLLECTION</a>
+			<a href="coordinate.html" class="nomal">COORDINATE</a>
+			<a href="ring_simulation.html" class="nomal">RING SIMULATION</a>
+			<a href="ear_simulation.html" class="nomal">EAR SIMULATION</a>
+			<a href="shop_list.html" class="nomal">SHOP LIST</a>
+			<a href="company.html" class="nomal">COMPANY INFORMATION</a>
+			<a href="contact.html">CONTACT US</a>
+			<a href="privacy_policy.html">PRIVACY POLICY</a>
+		</div>
+		<a href="#" id="instagram"><img src="assets/img/instagram.png" alt="INSTAGRAM"></a>
+		<small>ALL CONTENTS COPYRIGHTHY &copy; ATELIER ODO.LTD.ALL RIGHTS RESERVED</small>
+	</div>	
+</footer>	
+
+<a href="#" id="page-top">TOP</a>
+	
+	<!--スマホメニュー--> 
+    <script>
+        $(function() {
+            var $header = $('header');
+            $('.button').click(function(){
+                $header.toggleClass("open");
+            });
+        });
+    </script>
+    
+	<!--スマホメニュー　body固定--> 
+    <script>
+        $(function(){
+            var scrollPos;
+            $('.button').on('click', function() {
+                if($('body').hasClass('fixed')){
+                    $('body').removeClass('fixed').css('top',0 + 'px');
+                    window.scrollTo( 0 , scrollPos );
+                }else{
+                    scrollPos = $(window).scrollTop();
+                    $('body').addClass('fixed').css('top',-scrollPos + 'px');
+                }
+            });
+        });
+    </script>
+
+<!--スクロールでトップへ--> 
+    <script>
+        $(function() {
+            var topBtn = $('#page-top');    
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+<!--アニメーション-->
+    <script>
+        function scrollChk(){
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            
+            jQuery('.scroll-animation').not('.active').each(function(){
+                var pos = $(this).offset().top;
+                
+                if (scroll > pos - windowHeight){
+                    $(this).addClass("active");
+                }
+            });
+        }
+        $(window).scroll(function (){
+            scrollChk();
+        });
+        $('body').on('touchmove', function() {
+            scrollChk();
+        });
+    </script>

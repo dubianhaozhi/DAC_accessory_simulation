@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>COORDINATE｜ILII公式サイト</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="ILIIのコーディネートをご紹介します。ぜひご自分のファッションのヒントにしてみてください。">
+	
+	<meta property="og:title" content="Coordinate｜ILII公式サイト"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.a-odo.co.jp/ilii/"/>
+    <meta property="og:image" content="http://www.a-odo.co.jp/ilii/assets/img/ogp.jpg"/>
+    <meta property="og:site_name" content="Coordinate｜ILII公式サイト"/>
+    <meta property="og:description" content="ILIIのコーディネートをご紹介します。ぜひご自分のファッションのヒントにしてみてください。"/>
+	
+	<link rel="shortcut icon" href="assets/img/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd_common.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/2nd.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/animation.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/luminous-basic.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/bwv2dze.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+</head>
+
+<body>				
+	<div id="header"></div>	
+	
+	<main id="coordinate">  	
+		<h2 class="tranjan">COORDINATE</h2>
+		<div id="list">
+			<a data-luminous href="assets/img/coordinate01.jpg"><img src="assets/img/coordinate01.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate02.jpg"><img src="assets/img/coordinate02.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate03.jpg"><img src="assets/img/coordinate03.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate04.jpg"><img src="assets/img/coordinate04.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate05.jpg"><img src="assets/img/coordinate05.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate06.jpg"><img src="assets/img/coordinate06.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate07.jpg"><img src="assets/img/coordinate07.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate08.jpg"><img src="assets/img/coordinate08.jpg" alt="ILLI コーディネート"></a>			
+			<a data-luminous href="assets/img/coordinate09.jpg"><img src="assets/img/coordinate09.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate10.jpg"><img src="assets/img/coordinate10.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate11.jpg"><img src="assets/img/coordinate11.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate12.jpg"><img src="assets/img/coordinate12.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate13.jpg"><img src="assets/img/coordinate13.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate14.jpg"><img src="assets/img/coordinate14.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate15.jpg"><img src="assets/img/coordinate15.jpg" alt="ILLI コーディネート"></a>
+			<a data-luminous href="assets/img/coordinate16.jpg"><img src="assets/img/coordinate16.jpg" alt="ILLI コーディネート"></a>
+		</div>
+	</main>		
+		
+	<div id="footer"></div>	
+	
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!--共通ファイル用javascript-->
+	<script> 
+		$(function() { 
+			$("#header").load("assets/tpl/header.html");
+			$("#footer").load("assets/tpl/footer.html"); });
+	</script>
+	
+	
+	
+	<!--Luminous-->
+	<script src="assets/js/luminous.min.js"></script>
+	<script>
+		const luminousOpts = {
+			caption: (trigger) => {
+				return trigger.querySelector("img").getAttribute("alt");
+			}
+		};
+		
+		document.querySelectorAll("a[data-luminous]").forEach((elm) => {
+			new Luminous(elm, luminousOpts);
+		});
+	</script>
+	
+</body>
+</html>

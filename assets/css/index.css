@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (min-width:1051px) {
+	#wrapper{position: relative;width: 100%; margin: 0;	padding: 0;height:auto !important; /*IE6対策*/height: 100%; /*IE6対策*/min-height: 100%;}
+	
+	header{width: 100%;height:90px; margin: 0 auto;position: fixed;top:0;left: 0;z-index: 99}
+	header > div{width: 100%;height:90px;margin: 0 auto;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 0%;background-size: 100% auto; }
+	header div section{position: relative;width:1000px;height: 90px; margin:0 auto;padding:0px 0;}
+	header div section h1{position: absolute;top: 15px;left:0%;width:160px;margin: 0;padding: 0;}
+	header div section h1 img{width:100%;}
+	header div section h1:hover{opacity:0.3;}
+	
+	.button{display:block;	position: absolute;	right:0%;top:0px;width: 90px;height:90px;padding:0px 0 0 0px;margin: 0 0;text-align: center;letter-spacing: 1px; font-size:14px; cursor:pointer;} 
+    .button span {display:block;position: absolute;	height:2px;border-radius: 2px;/*	width:100%;*/background: #040000;right:15%;	-webkit-transition: .35s ease-in-out;	-moz-transition: .35s ease-in-out;	transition: .35s ease-in-out;}
+    .button span:nth-child(1) {	top:36%;width:70%;}
+    .button span:nth-child(2) {	top:50%;width:60%;}
+    .button span:nth-child(3) {	top:64%;width:50%;}    
+    
+    .open .button span{display:block;	background:#444444;}
+    .open .button span:nth-child(1) {	width:60%;left:20%;top: 50%;	-webkit-transform: rotate(45deg);	-moz-transform: rotate(45deg);	transform: rotate(45deg); }
+    .open .button span:nth-child(2) {	width: 0;left: 50%;}
+    .open .button span:nth-child(3) {	width:60%;left: 20%;top:50%;	-webkit-transform: rotate(-45deg);	-moz-transform: rotate(-45deg);	transform: rotate(-45deg);}
+    .open nav {	display: block;	animation-duration: 0.6s;	animation-name: fade-in;} 
+        
+    @keyframes fade-in { from { opacity:0.1;}        to { opacity:1;}    }
+	
+	header div section nav{display: none;width: 100%;	height:100vh;	position:fixed;	top:90px;left: 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 100%;background-size:cover;}
+	header div section nav #menu{position: fixed;top:90px;left:0%;width:100%;height:75vh;margin:0 auto;padding:0;list-style: none;overflow-y: scroll;	-webkit-overflow-scrolling: touch;	overflow-scrolling: touch;}
+	header div section nav #menu ul {width: 1000px; margin:0 auto;padding: 0 ;list-style: none;}
+	header div section nav #menu ul li{width: 50%;margin:0 auto;padding: 0 ;float: left;}
+	header div section nav #menu ul li a{display: block;text-decoration: none;color:#444;border-bottom: 1px dotted #444; font-size:22px;letter-spacing: 2px;}	
+	header div section nav #menu ul li:nth-of-type(9) a,header div section nav #menu ul li:nth-of-type(10) a{border-bottom:none}
+	header div section nav #menu ul li a.nomal{padding:20px 0% 20px 10px;}
+	header div section nav #menu ul li a.instagram{padding:20px 0% 20px 50px;background: url("../img/instagram.png") no-repeat;background-position: 10px 50%;background-size: 24px auto;}
+	header div section nav #menu ul li a:hover{color:#C0C0C0;} 
+	
+	footer{position:fixed;bottom: 0%;left: 0;width:100%;height: 70px; margin: 0;padding:0px 0 0 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 100%;background-size: 100% auto;}/*低い画面になった時、スクロールさせる*/
+	footer #inner{width:1000px;margin: 0 auto;}
+	footer #inner ul{float:left;width: 40%;margin: 0;padding: 0;list-style: none;}
+	footer #inner ul li{float:left;display: inline-block;margin: 0;padding: 0;}
+	footer #inner ul li a{display:block;padding: 25px 20px 0px 20px;text-decoration: none;color: black; font-size: 13px;letter-spacing: 2px;}
+	footer #inner ul li a:hover{color:#939393;} 
+	footer #inner small{float: right;display: block;width: 60%;margin: 0 ;padding:30px 0 0 0; text-align:right; font-size: 10px;letter-spacing: 2px;}
+	
+	.image_slider {position: absolute;top:0px;left: 0; width:100%; margin: 0 auto;padding:0px 0 0px 0;font-size: 0;}
+	.image_slider #scene01{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image01.jpg") no-repeat;background-position: 50% 50%;background-size:cover}
+	.image_slider #scene02{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image02.jpg") no-repeat;background-position: 50% 50%;background-size:cover}	
+	
+	main{position: absolute;top: 0px;left: 0;width: 100%;}
+	
+	main #contents_wrapper{position: relative;width:1000px;height: 80vh;margin: 0 auto;padding: 0; }	
+	main #contents_wrapper #contents{position: absolute;top:50%;right: 0;  margin: 0 0;}
+	
+	main #contents_wrapper #contents h2{ width:300px;margin:0 auto 20px auto;padding: 0;text-align: center;}
+	main #contents_wrapper #contents h2 img{;width:100%;}
+	main #contents_wrapper #contents p{margin:0;padding: 0;font-size: 20px;letter-spacing: 4px;text-shadow:0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF;text-align: center;}	
+}
+@media screen and (min-width:701px) and ( max-width:1050px)  {
+	#wrapper{position: relative;width: 100%; margin: 0;	padding: 0;height:auto !important; /*IE6対策*/height: 100%; /*IE6対策*/min-height: 100%;}
+	
+	header{width: 100%;height:90px; margin: 0 auto;position: fixed;top:0;left: 0;z-index: 99}
+	header > div{width: 100%;height:90px;margin: 0 auto;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 0%;background-size: 100% auto; }
+	header div section{position: relative;width:90%;height: 90px; margin:0 auto;padding:0px 0;}
+	header div section h1{position: absolute;top: 15px;left:0%;width:160px;margin: 0;padding: 0;}
+	header div section h1 img{width:100%;}
+	header div section h1:hover{opacity:0.3;}
+	
+	.button{display:block;	position: absolute;	right:0%;top:0px;width: 90px;height:90px;padding:0px 0 0 0px;margin: 0 0;text-align: center;letter-spacing: 1px; font-size:14px; cursor:pointer;} 
+    .button span {display:block;position: absolute;	height:2px;border-radius: 2px;/*	width:100%;*/background: #040000;right:15%;	-webkit-transition: .35s ease-in-out;	-moz-transition: .35s ease-in-out;	transition: .35s ease-in-out;}
+    .button span:nth-child(1) {	top:36%;width:70%;}
+    .button span:nth-child(2) {	top:50%;width:60%;}
+    .button span:nth-child(3) {	top:64%;width:50%;}    
+    
+    .open .button span{display:block;	background:#444444;}
+    .open .button span:nth-child(1) {	width:60%;left:20%;top: 50%;	-webkit-transform: rotate(45deg);	-moz-transform: rotate(45deg);	transform: rotate(45deg); }
+    .open .button span:nth-child(2) {	width: 0;left: 50%;}
+    .open .button span:nth-child(3) {	width:60%;left: 20%;top:50%;	-webkit-transform: rotate(-45deg);	-moz-transform: rotate(-45deg);	transform: rotate(-45deg);}
+    .open nav {	display: block;	animation-duration: 0.6s;	animation-name: fade-in;} 
+        
+    @keyframes fade-in { from { opacity:0.1;}        to { opacity:1;}    }
+	
+	header div section nav{display: none;width: 100%;	height:100vh;	position:fixed;	top:90px;left: 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 50%;background-size:auto 100% ;}
+	header div section nav #menu{position: fixed;top:90px;left:0%;width:100%;height:75vh;margin:0 auto;padding:0;list-style: none;overflow-y: scroll;	-webkit-overflow-scrolling: touch;	overflow-scrolling: touch;}
+	header div section nav #menu ul {width:80%; margin:0 auto;padding: 0 ;list-style: none;}
+	header div section nav #menu ul li{width: 50%;margin:0 auto;padding: 0 ;float: left;}
+	header div section nav #menu ul li a{display: block;text-decoration: none;color:#444;border-bottom: 1px dotted #444; font-size:22px;letter-spacing: 2px;}	
+	header div section nav #menu ul li:nth-of-type(9) a,header div section nav #menu ul li:nth-of-type(10) a{border-bottom:none}
+	header div section nav #menu ul li a.nomal{padding:20px 0% 20px 10px;}
+	header div section nav #menu ul li a.instagram{padding:20px 0% 20px 50px;background: url("../img/instagram.png") no-repeat;background-position: 10px 50%;background-size: 24px auto;}
+	header div section nav #menu ul li a:hover{color:#C0C0C0;}
+	
+	footer{position:fixed;bottom: 0%;left: 0;width:100%;height: 140px; margin: 0;padding:0px 0 0 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 100%;background-size: 100% auto;}/*低い画面になった時、スクロールさせる*/
+	footer #inner{width:100%;margin: 0 auto;}
+	footer #inner ul{width:80%;margin: 0 auto 20px auto;padding: 0 0%;list-style: none;text-align: center;border-bottom: 1px solid black;}
+	footer #inner ul li{display: inline-block; margin: 0 ;padding: 0 ;}
+	footer #inner ul li a{display:block;padding: 30px 20px 20px 20px;text-decoration: none;color: black; font-size: 13px;letter-spacing: 2px;text-align: center;}
+	footer #inner ul li a:hover{color:#939393;} 
+	footer #inner small{display: block;width: 100%;margin: 0 auto;padding:0px 0 0 0; text-align:center; font-size: 10px;letter-spacing: 2px;}
+	
+	.image_slider {position: absolute;top:0px;left: 0; width:100%; margin: 0 auto;padding:0px 0 0px 0;font-size: 0;}
+	.image_slider #scene01{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image01.jpg") no-repeat;background-position: 50% 50%;background-size:cover}
+	.image_slider #scene02{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image02.jpg") no-repeat;background-position: 50% 50%;background-size:cover}	
+	
+	main{position: absolute;top: 0px;left: 0;width: 100%;}
+	
+	main #contents_wrapper{position: relative;width:90%;height: 80vh;margin: 0 auto;padding: 0; }	
+	main #contents_wrapper #contents{position: absolute;top:50%;right: 0;  margin: 0 0;}
+	
+	main #contents_wrapper #contents h2{ width:300px;margin:0 auto 20px auto;padding: 0;text-align: center;}
+	main #contents_wrapper #contents h2 img{;width:100%;}
+	main #contents_wrapper #contents p{margin:0;padding: 0;font-size: 20px;letter-spacing: 4px;text-shadow:0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF;text-align: center;}
+}
+@media (max-width: 700px) {
+	#wrapper{position: relative;width: 100%; margin: 0;	padding: 0;height:auto !important; /*IE6対策*/height: 100%; /*IE6対策*/min-height: 100%;}
+	
+	header{width: 100%;height:90px; margin: 0 auto;position: fixed;top:0;left: 0;z-index: 99}
+	header > div{width: 100%;height:90px;margin: 0 auto;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 0%;background-size: 100% auto; }
+	header div section{position: relative;width:90%;height: 90px; margin:0 auto;padding:0px 0;}
+	header div section h1{position: absolute;top: 20px;left:0%;width:150px;margin: 0;padding: 0;}
+	header div section h1 img{width:100%;}
+	header div section h1:hover{opacity:0.3;}
+	
+	.button{display:block;	position: absolute;	right:0%;top:0px;width: 90px;height:90px;padding:0px 0 0 0px;margin: 0 0;text-align: center;letter-spacing: 1px; font-size:14px; cursor:pointer;} 
+    .button span {display:block;position: absolute;	height:2px;border-radius: 2px;/*	width:100%;*/background: #040000;right:15%;	-webkit-transition: .35s ease-in-out;	-moz-transition: .35s ease-in-out;	transition: .35s ease-in-out;}
+    .button span:nth-child(1) {	top:40%;width:70%;}
+    .button span:nth-child(2) {	top:50%;width:60%;}
+    .button span:nth-child(3) {	top:60%;width:50%;}    
+    
+    .open .button span{display:block;	background:#444444;}
+    .open .button span:nth-child(1) {	width:60%;left:20%;top: 50%;	-webkit-transform: rotate(45deg);	-moz-transform: rotate(45deg);	transform: rotate(45deg); }
+    .open .button span:nth-child(2) {	width: 0;left: 50%;}
+    .open .button span:nth-child(3) {	width:60%;left: 20%;top:50%;	-webkit-transform: rotate(-45deg);	-moz-transform: rotate(-45deg);	transform: rotate(-45deg);}
+    .open nav {	display: block;	animation-duration: 0.6s;	animation-name: fade-in;} 
+        
+    @keyframes fade-in { from { opacity:0.1;}        to { opacity:1;}    }
+	
+	header div section nav{display: none;width: 100%;	height:100vh;	position:fixed;	top:90px;left: 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 50%;background-size:auto 100% ;}
+	header div section nav #menu{position: fixed;top:90px;left:0%;width:100%;height:75vh;margin:0 auto;padding:0;list-style: none;overflow-y: scroll;	-webkit-overflow-scrolling: touch;	overflow-scrolling: touch;}
+	header div section nav #menu ul {width:100%; margin:0 auto;padding: 0 ;list-style: none;}
+	header div section nav #menu ul li{width: 100%;margin:0 auto;padding: 0 ;}
+	header div section nav #menu ul li a{display: block;text-decoration: none;color:#444;border-bottom: 1px dotted #444; font-size:18px;letter-spacing: 1px;}	
+	header div section nav #menu ul li:nth-of-type(10) a{border-bottom:none}
+	header div section nav #menu ul li a.nomal{padding:20px 0% 20px 10px;}
+	header div section nav #menu ul li a.instagram{padding:20px 0% 20px 50px;background: url("../img/instagram.png") no-repeat;background-position: 10px 50%;background-size: 24px auto;}
+	header div section nav #menu ul li a:hover{color:#C0C0C0;} 
+	
+	footer{position:fixed;bottom: 0%;left: 0;width:100%;height: 180px; margin: 0;padding:0px 0 0 0;background:url("../img/background_all.jpg") no-repeat;background-position: 50% 100%;background-size: 100% auto;}/*低い画面になった時、スクロールさせる*/
+	footer #inner{width:100%;margin: 0 auto;}
+	footer #inner ul{width:100%;margin: 0 auto 20px auto;padding: 0 0%;list-style: none;text-align: center;}
+	footer #inner ul li{width: 100%; margin: 0 ;padding: 0 ;border-bottom: 1px solid black;}
+	footer #inner ul li a{display:block;padding: 20px 0px;text-decoration: none;color: black; font-size: 13px;letter-spacing: 2px;text-align: center;}
+	footer #inner ul li a:hover{color:#939393;} 
+	footer #inner small{display: block;width: 80%;margin: 0 auto;padding:0px 0 0 0; text-align:center; font-size: 9px;letter-spacing: 1px;}
+	
+	.image_slider {position: absolute;top:0px;left: 0; width:100%; margin: 0 auto;padding:0px 0 0px 0;font-size: 0;}
+	.image_slider #scene01{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image_sp01.jpg") no-repeat;background-position: 60% 50%;background-size:cover;}
+	.image_slider #scene02{position: relative;width:100%;height: 100vh;margin: 0 auto; background: url("../img/top_slider_image02.jpg") no-repeat;background-position: 50% 50%;background-size:cover}	
+	
+	main{position: absolute;top: 0px;left: 0;width: 100%;}
+	
+	main #contents_wrapper{position: relative;width:96%;height: 80vh;margin: 0 auto;padding: 0; }	
+	main #contents_wrapper #contents{position: absolute;top:60%;width: 100%; right: 0;  margin: 0 0;}
+	
+	main #contents_wrapper #contents h2{ width:200px;margin:0 auto 10px auto;padding: 0;text-align: center;}
+	main #contents_wrapper #contents h2 img{;width:100%;}
+	main #contents_wrapper #contents p{margin:0 auto;padding: 0;font-size: 16px;letter-spacing: 0px;text-shadow:0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF,0px 0px 10px #FFF;text-align: center;}	
+} 

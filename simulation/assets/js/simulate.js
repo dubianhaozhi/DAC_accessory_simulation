@@ -31,7 +31,7 @@ $('[id^=simulation__reset]').click(function() {
 })
 
 // 削除ボタン押したら
-$('[id^=simulation__delete]').on('clock touchstart', function() {
+$('[id^=simulation__delete]').on('click touchstart', function() {
   $('.moveable-control-box').each(function(i, elem) {
     $controlBox = $(elem)
     if ($controlBox.css('display') === 'block') {
