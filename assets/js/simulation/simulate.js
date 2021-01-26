@@ -9,7 +9,7 @@ $('.product__imgWrapper').click(function() {
   const numOfTarget = countOfTarget + 1
   const id = `target--${numOfTarget}`
   const imgSrc = $(this).find('.product__img').attr('src')
-  const simulationImgSrc = tab === 'ring' ? imgSrc.replace(tab, `${tab}_for_simulation`) : imgSrc.replace(tab, `${tab}_for_simulation`).replace('jpg', 'png')
+  const simulationImgSrc = imgSrc.replace(tab, `${tab}_for_simulation`)
   const targetElem = `<img class="target" id="${id}" src="${simulationImgSrc}" load="loaded()">`
   $(`#simulation__target--${tab}`).append(targetElem)
   $(`#${id}`).bind('load', function() {
