@@ -58,9 +58,9 @@
   &__targetImg {
     user-select: none;
     pointer-events: none;
-    width: 400px;
+    width: 390px;
     @include mq('sp') {
-      width: 100%;
+      width: 295px;
     }
   }
   &__elems {
