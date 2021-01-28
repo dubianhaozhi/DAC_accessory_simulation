@@ -85,12 +85,26 @@
     }
   }
   &__targetImg {
+    $this: &;
     user-select: none;
     pointer-events: none;
     width: #{$imgWidthPC}px;
-    height: auto;
     @include mq('sp') {
       width: #{$imgWidthSP}px;
+    }
+    &--ring {
+      @extend #{$this};
+      height: 570px;
+      @include mq('sp') {
+        height: 431px;
+      }
+    }
+    &--earring {
+      @extend #{$this};
+      height: 563px;
+      @include mq('sp') {
+        height: 426px;
+      }
     }
   }
   &__elems {
