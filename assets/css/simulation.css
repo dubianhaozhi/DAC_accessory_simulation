@@ -248,6 +248,7 @@ li {
           user-select: none;
   pointer-events: none;
   width: 390px;
+  height: auto;
 }
 
 @media screen and (max-width: 600px) {
