@@ -1,5 +1,7 @@
 // 参考サイト: https://github.com/daybrush/moveable
 
+const isRing = tab === 'ring'
+
 // TODO: リファクタ(不要なコードとかあるかも)
 const move = function(targetId) {
   const className = `moveable__${targetId}`;
@@ -12,14 +14,14 @@ const move = function(targetId) {
     throttleDragRotate: 0,
     zoom: 1.3,
     origin: false,
-    padding: {"left":0,"top":0,"right":0,"bottom":0},
+    padding: {"left":36,"top":36,"right":36,"bottom":36},
     rotatable: true,
     throttleRotate: 0,
     rotationPosition: "top",
-    scalable: true,
+    scalable: isRing,
     keepRatio: true,
     throttleScale: 0,
-    renderDirections: ["nw","ne","sw","se"],
+    renderDirections: isRing ? ["nw","ne","sw","se"] : ["ne"],
     edge: false,
   });
   let frame = {
@@ -42,10 +44,11 @@ const move = function(targetId) {
   }).on("scale", ({ scale }) => {
     frame.scale = scale
   }).on("render", ({ target }) => {
+    const scaleRate = isSP ? (295 / 390) : 1;
     const { translate, rotate, scale } = frame;
-    target.style.transform = `translate(${translate[0]}px, ${translate[1]}px)`
+    target.style.transform = `translate(calc(-50% + 100px + ${translate[0]}px), calc(-50% + 100px + ${translate[1]}px))`
       + ` rotate(${rotate}deg)`
-      + ` scale(${scale[0]}, ${scale[1]}) `;
+      + ` scale(calc(${scale[0]}/4 * ${scaleRate}), calc(${scale[1]}/4 * ${scaleRate})) `; // 4倍書き出しのため
   });
   return moveable;
 }

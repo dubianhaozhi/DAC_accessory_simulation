@@ -4,7 +4,7 @@
 const targets = []
 const moveables = []
 
-$('.product__imgWrapper').click(function() {
+$('[class^=product__imgWrapper]').click(function() {
   const countOfTarget = $('.target').length
   const numOfTarget = countOfTarget + 1
   const id = `target--${numOfTarget}`
@@ -40,10 +40,6 @@ $('[id^=simulation__delete]').on('click touchstart', function() {
         return name.includes('moveable__target')
       })
       const targetIdName = controlBoxClassName.replace('moveable__', '')
-      console.log({
-        targetIdName,
-        'aaa': 'aaa'
-      })
       $(`#${targetIdName}`).remove()
       $(`.${controlBoxClassName}`).remove()
     }

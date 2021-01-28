@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
   color: #000;
@@ -52,40 +53,72 @@ li {
   width: 84px;
 }
 
-.product__imgWrapper {
+.product__imgWrapper, .product__imgWrapper--ring, .product__imgWrapper--earring {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 
+.product__imgWrapper--ring {
+  height: 60px;
+}
+
+.product__imgWrapper--earring {
+  height: 100px;
+}
+
 .product__img {
-  width: 100%;
+  -webkit-transform: scale(calc(1/4));
+          transform: scale(calc(1/4));
+}
+
+@media screen and (max-width: 600px) {
+  .product__img {
+    -webkit-transform: scale(calc(1/4 * 295/390));
+            transform: scale(calc(1/4 * 295/390));
+  }
 }
 
 .product__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 20px;
   background-color: #eee;
+  width: 100%;
 }
 
 .product__btnText {
   font-size: 12px;
+  margin-right: 8px;
 }
 
 .product__btnIcon {
   width: 12px;
   height: 12px;
+}
+
+.simulation {
+  padding: 60px 0 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation {
+    padding: 40px 0 60px;
+  }
 }
 
 .simulation__container {
@@ -103,6 +136,12 @@ li {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__headerDescription {
+    font-size: 12px;
+  }
 }
 
 .simulation__tab {
@@ -142,12 +181,32 @@ li {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .simulation__playground {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__playground {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__playgroundColumn, .simulation__playgroundColumn--left, .simulation__playgroundColumn--right {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -155,14 +214,31 @@ li {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .simulation__playgroundColumn--left {
     margin-right: 0;
   }
 }
 
+.simulation__playgroundColumn--right {
+  width: 390px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .simulation__target {
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__target {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .simulation__targetImg {
@@ -186,42 +262,56 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.simulation__elem, .simulation__elem--lastColumn {
-  margin-bottom: 12px;
-  margin-right: 6px;
+.simulation__elem--ring {
+  margin-bottom: 28px;
 }
 
-.simulation__elem--lastColumn {
-  margin-right: 0;
-}
-
-.simulation__btns {
+.simulation__btns, .simulation__btns--ring, .simulation__btns--earring {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
   cursor: pointer;
+  margin-bottom: 44px;
+}
+
+.simulation__btns--earring {
+  margin-top: 28px;
 }
 
 .simulation__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
+  width: 84px;
   height: 32px;
   background-color: #eee;
   border-radius: 8px;
   line-height: 32px;
   text-align: center;
-  margin-right: 16px;
+  margin-right: 18px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__btn {
+    margin-right: 4px;
+  }
+}
+
+.simulation__btnText {
+  margin-right: 4px;
+  font-size: 14px;
 }
 
 .simulation__btnIcon {
@@ -230,15 +320,65 @@ li {
   height: 16px;
 }
 
+.simulation__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .simulation__descriptionText {
-  font-size: 12px;
+  font-size: 10px;
+  margin-right: 8px;
+}
+
+.simulation__descriptionImgWrapper, .simulation__descriptionImgWrapper--ring, .simulation__descriptionImgWrapper--earring {
+  position: relative;
+}
+
+.simulation__descriptionImgWrapper--ring::before {
+  content: '角度調整';
+  position: absolute;
+  top: -16px;
+  left: 20px;
+  font-size: 10px;
+}
+
+.simulation__descriptionImgWrapper--ring::after {
+  content: '拡大・縮小';
+  position: absolute;
+  top: -8px;
+  right: -24px;
+  font-size: 10px;
+}
+
+.simulation__descriptionImgWrapper--earring::before {
+  content: '角度調整';
+  position: absolute;
+  top: -16px;
+  left: 29px;
+  font-size: 10px;
+}
+
+.simulation__descriptionImg {
+  width: 100px;
 }
 
 .target {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
+  top: 30px;
+  left: 30px;
+  -webkit-transform: translate(calc(-50% + 100px), calc(-50% + 100px)) scale(calc(1/4));
+          transform: translate(calc(-50% + 100px), calc(-50% + 100px)) scale(calc(1/4));
+}
+
+@media screen and (max-width: 600px) {
+  .target {
+    -webkit-transform: translate(calc(-50% + 100px), calc(-50% + 100px)) scale(calc(1/4 * 295/390));
+            transform: translate(calc(-50% + 100px), calc(-50% + 100px)) scale(calc(1/4 * 295/390));
+  }
 }
 
 .target:hover {
