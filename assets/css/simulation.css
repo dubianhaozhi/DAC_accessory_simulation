@@ -241,19 +241,38 @@ li {
   }
 }
 
-.simulation__targetImg {
+.simulation__targetImg, .simulation__targetImg--ring, .simulation__targetImg--earring {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   width: 390px;
-  height: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .simulation__targetImg {
+  .simulation__targetImg, .simulation__targetImg--ring, .simulation__targetImg--earring {
     width: 295px;
+  }
+}
+
+.simulation__targetImg--ring {
+  height: 570px;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__targetImg--ring {
+    height: 431px;
+  }
+}
+
+.simulation__targetImg--earring {
+  height: 563px;
+}
+
+@media screen and (max-width: 600px) {
+  .simulation__targetImg--earring {
+    height: 426px;
   }
 }
 
