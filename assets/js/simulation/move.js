@@ -2,7 +2,6 @@
 
 const isRing = tab === 'ring'
 
-// TODO: リファクタ(不要なコードとかあるかも)
 const move = function(targetId) {
   const className = `moveable__${targetId}`;
   const moveable = new Moveable(document.body, {
@@ -54,7 +53,6 @@ const move = function(targetId) {
 }
 
 // focusしてるときだけmoveableを表示する
-// TODO: リファクタする(パフォーマンス大丈夫？)
 $(document).on('click touchstart', function(e) {
   $target = $(e.target)
   $('.moveable-control-box').hide()

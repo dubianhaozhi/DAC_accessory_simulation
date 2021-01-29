@@ -1,6 +1,3 @@
-// TODO: コメント入れる
-// TODO: リファクタしたい
-
 const targets = []
 const moveables = []
 
